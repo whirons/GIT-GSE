@@ -32,8 +32,15 @@ GSE.move <- getMovebankData(study="Great Spotted Eagle - Belarus",
                             timestamp_end="20190729180000000")
 head(GSE.move) 
 
+#create dataframe
 GSE.dat <- as(GSE.move, "data.frame")
+
+
+#Clean data
+
 
 GSE.dat$timestamp<-as.POSIXct(GSE.dat$timestamp, format="%Y-%m-%d %H:%M:%OS", tz="UTC")
 
+
 #Read in 2019 Camtrap dataset
+data <- read.csv()
